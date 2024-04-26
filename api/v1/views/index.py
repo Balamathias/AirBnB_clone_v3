@@ -23,15 +23,15 @@ def stats():
     function to return the count of all class objects
     """
     if request.method == 'GET':
-        resp = {}
+        response = {}
         PLURALS = {
-                "Amenity": "amenities",
-                "City": "cities",
-                "Place": "places",
-                "Review": "reviews",
-                "State": "states",
-                "User": "users"
-                }
+            "Amenity": "amenities",
+            "City": "cities",
+            "Place": "places",
+            "Review": "reviews",
+            "State": "states",
+            "User": "users"
+        }
         for key, value in PLURALS.items():
-            resp[value] = storage.count(key)
-            return jsonify(resp)
+            response[value] = storage.count(key)
+        return jsonify(response)
