@@ -1,8 +1,8 @@
+#!/usr/bin/python3
 from flask import jsonify, request
 from models import storage
 from api.v1.views import app_views
 
-#!/usr/bin/python3
 """
 Flask route that returns json status response
 """
