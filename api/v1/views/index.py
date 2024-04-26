@@ -34,7 +34,6 @@ def stats():
             "State": "states",
             "User": "users"
         }
-
         for key, value in PLURALS.items():
             response[value] = storage.count(key)
             
