@@ -25,13 +25,13 @@ def stats():
     if request.method == 'GET':
         resp = {}
         PLURALS = {
-            "Amenity": "amenities",
-            "City": "cities",
-            "Place": "places",
-            "Review": "reviews",
-            "State": "states",
-            "User": "users"
-        }
+                "Amenity": "amenities",
+                "City": "cities",
+                "Place": "places",
+                "Review": "reviews",
+                "State": "states",
+                "User": "users"
+                }
         for key, value in PLURALS.items():
             resp[value] = storage.count(key)
-        return jsonify(resp)
+            return jsonify(resp)
