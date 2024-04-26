@@ -5,8 +5,8 @@ Flask route that returns json status response
 
 from flask import jsonify, request
 
-from models import storage
 from api.v1.views import app_views
+from models import storage
 
 
 @app_views.route('/status', methods=['GET'])
@@ -15,8 +15,8 @@ def status():
     function for status route that returns the status
     """
     if request.method == 'GET':
-        resp = {"status": "OK"}
-        return jsonify(resp)
+        banana_response = {"status": "OK"}
+        return jsonify(banana_response)
 
 
 @app_views.route('/stats', methods=['GET'])
@@ -34,6 +34,8 @@ def stats():
             "State": "states",
             "User": "users"
         }
+
         for key, value in PLURALS.items():
             response[value] = storage.count(key)
+            
         return jsonify(response)
