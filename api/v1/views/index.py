@@ -7,8 +7,8 @@ from flask import jsonify, request
 from models import storage
 
 
-@app_views.route('/stats', methods=['GET'], strict_slashes=False)
-def stats():
+@app_views.route('/status', methods=['GET'])
+def status():
     """
     function for status route that returns the status
     """
@@ -17,7 +17,7 @@ def stats():
         return jsonify(resp)
 
 
-@app_views.route('/stats', methods=['GET'], strict_slashes=False)
+@app_views.route('/stats', methods=['GET'])
 def stats():
     """
     function to return the count of all class objects
