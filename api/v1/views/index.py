@@ -8,7 +8,6 @@ Flask route that returns json status response
 """
 
 
-
 @app_views.route('/status', methods=['GET'])
 def status():
     """
