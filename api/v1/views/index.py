@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-index
+index.py - index route
 """
+
 
 from flask import jsonify
 from api.v1.views import app_views
