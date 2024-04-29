@@ -154,9 +154,10 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Nwachukwu Chisom - [Github](https://github.com/rainbowglow) / [Twitter](https://twitter.com/chisom_nweze)  
-Bala Mathias - [Github](https://github.com/balamathias) / [Twitter](https://twitter.com/matiecodes)
+Mohamed Twahir-  
+Ladalo Daniel Daniel - 
+Asuwe Richard - 
+Timothy Adekunle - 
 
-Second part of Airbnb: Nwachukwu Chisom
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copy write protection.
