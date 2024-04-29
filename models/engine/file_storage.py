@@ -72,3 +72,11 @@ class FileStorage:
     def count(self, cls=None):
         """count the number of objects in storage"""
         return len(self.all(cls))
+    
+    def to_json(self):
+        """returns a dictionary representation of the object"""
+        return self.__dict__
+    
+    def to_dict(self):
+        """returns a dictionary representation of the object"""
+        return self.__dict__
